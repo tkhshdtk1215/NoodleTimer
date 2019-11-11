@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NoodleTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noodle1" translatesAutoresizingMaskIntoConstraints="NO" id="Dty-pC-9XV">
+                                <rect key="frame" x="55.5" y="194" width="303" height="393"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dty-pC-9XV" secondAttribute="height" multiplier="500:648" id="vIs-sd-4cX"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ6-mP-l4B">
+                                <rect key="frame" x="67" y="627" width="280" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3P-V2-08c">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="54U-Bg-nLJ"/>
+                                            <constraint firstAttribute="width" constant="80" id="blJ-vD-p0O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                                        <state key="normal" title="3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="set3minites:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ed-V3-xlm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohd-Mm-qOi">
+                                        <rect key="frame" x="100" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Twn-P9-JGW"/>
+                                            <constraint firstAttribute="width" constant="80" id="h0o-rU-Zik"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                                        <state key="normal" title="4"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="set4minites:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fT3-h1-Xow"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahS-2w-1D9">
+                                        <rect key="frame" x="200" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="4V7-yD-OuS"/>
+                                            <constraint firstAttribute="height" constant="80" id="b8v-VM-jbl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="40"/>
+                                        <state key="normal" title="5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="set5minites:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vf9-yA-h2R"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcq-7D-ycM">
+                                <rect key="frame" x="67" y="727" width="280" height="80"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="DQq-L4-qQW"/>
+                                    <constraint firstAttribute="height" constant="80" id="DfK-dd-6Ml"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="スタート">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="countDownStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5yH-zF-y3B"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gID-O7-xaL">
+                                <rect key="frame" x="129" y="74" width="156" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="UBh-S0-oqo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZZ6-mP-l4B" firstAttribute="top" secondItem="Dty-pC-9XV" secondAttribute="bottom" constant="40" id="4Dj-fJ-rcF"/>
+                            <constraint firstItem="Dty-pC-9XV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QRu-Ca-lsU"/>
+                            <constraint firstItem="gID-O7-xaL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RlA-F5-VcZ"/>
+                            <constraint firstItem="Dty-pC-9XV" firstAttribute="top" secondItem="gID-O7-xaL" secondAttribute="bottom" constant="40" id="TCy-cM-Z3L"/>
+                            <constraint firstItem="vcq-7D-ycM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U6D-2f-DCV"/>
+                            <constraint firstItem="ZZ6-mP-l4B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V2V-30-ioO"/>
+                            <constraint firstItem="vcq-7D-ycM" firstAttribute="top" secondItem="ZZ6-mP-l4B" secondAttribute="bottom" constant="20" id="gNZ-tx-1e8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vcq-7D-ycM" secondAttribute="bottom" constant="55" id="iw8-5t-xqY"/>
+                            <constraint firstItem="gID-O7-xaL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="oHu-IW-nmQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn3" destination="n3P-V2-08c" id="Zrh-yZ-x02"/>
+                        <outlet property="btn4" destination="ohd-Mm-qOi" id="hY1-IF-KEj"/>
+                        <outlet property="btn5" destination="ahS-2w-1D9" id="Aql-L3-i8s"/>
+                        <outlet property="btnLabel" destination="vcq-7D-ycM" id="lCz-ud-o8L"/>
+                        <outlet property="noodle1" destination="Dty-pC-9XV" id="2iZ-Cp-T8G"/>
+                        <outlet property="timerLabel" destination="gID-O7-xaL" id="EXf-tv-lD7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="noodle1" width="500" height="648"/>
+    </resources>
+</document>
